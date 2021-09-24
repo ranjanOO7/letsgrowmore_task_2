@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import CardComponent from "./CardComponent";
+// import { } from "reactstrap";
 
 class CardDetail extends Component {
     constructor() {
@@ -14,14 +15,10 @@ class CardDetail extends Component {
         // console.log(this.props.dataSet[0].id);
 
         const MakeCard = this.props.dataSet.map((data) => {
-            return (
-                <div key={data.id}>
-                    <CardComponent data={data} key={data.id} />
-                </div>
-            );
+            return <CardComponent data={data} key={data.id} />;
         });
 
-        return <div>{MakeCard}</div>;
+        return <div className="main">{MakeCard}</div>;
     }
 }
 

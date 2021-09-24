@@ -1,7 +1,100 @@
 html {
     background-color: #01010b;
 }
+
 .App {
-    text-align: center;
+    /* text-align: center; */
     color: cyan;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5%;
+}
+
+.navbar-brand {
+    margin: 1% 0 0 3%;
+    right: 0;
+    font-size: 2.5rem;
+    color: #01010b;
+    text-shadow: -1px 0 cyan, 0 1px cyan, 1px 0 cyan, 0 -1px cyan;
+}
+
+.nav {
+    margin: 2% 3% 0 0;
+    list-style: none;
+    left: 0;
+}
+
+.nav-item button {
+    background: transparent;
+    border: none;
+    border: 2px solid cyan;
+    background-color: #01010b;
+    color: #01010b;
+    text-shadow: -1px 0 cyan, 0 1px cyan, 1px 0 cyan, 0 -1px cyan;
+    font-size: 1.5rem;
+    padding: 10% 0%;
+    width: 12.5vw;
+    box-shadow: 0 4px 15px 0 rgba(0, 255, 255, 0.5),
+        0 6px 20px 0 rgba(0, 255, 255, 0.5);
+}
+
+.nav-item button:hover {
+    /* background-color: #fff; */
+    border: 2px solid darkmagenta;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px 0 rgba(255, 0, 255, 0.5),
+        0 6px 15px 0 rgba(255, 0, 255, 0.5);
+    text-shadow: -1px 0 rgb(218, 32, 218), 0 1px rgb(218, 32, 218),
+        1px 0 rgb(218, 32, 218), 0 -1px rgb(218, 32, 218);
+    /* color: #fff; */
+    transition: 0.3s ease;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: auto auto;
+    margin: 0 0 0 15%;
+}
+
+.card {
+    padding: 5% 0 0 0;
+    margin: 0 5% 10% 5%;
+    height: 200px;
+    width: 200px;
+    border: 2px solid cyan;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 4px 20px 0 rgba(0, 255, 255, 0.5);
+}
+
+.card:hover {
+    color: #ff00ff;
+    border: 2px solid #ff00ff;
+    box-shadow: 0 4px 20px 0 rgba(255, 0, 255, 0.5);
+    transform: scale(1.1);
+    transition: 0.5s ease-in-out;
+}
+
+.card:hover .card-img {
+    border: 2px solid #f0f;
+    transition: 0.5s ease-in-out;
+}
+
+.card-img {
+    margin-bottom: 3%;
+    border: 2px solid cyan;
+    border-radius: 50%;
+}
+
+.card_text {
+    margin: 1% 0;
 }

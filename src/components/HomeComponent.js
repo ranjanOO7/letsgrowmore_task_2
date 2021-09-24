@@ -39,17 +39,8 @@ class Home extends Component {
     getDetails() {
         if (this.state.isClicked) {
             if (this.state.isLoaded)
-                return (
-                    <div>
-                        <CardDetail dataSet={this.state.data} />
-                    </div>
-                );
-        } else
-            return (
-                <div>
-                    <h1>False</h1>
-                </div>
-            );
+                return <CardDetail dataSet={this.state.data} />;
+        } else return <h1>False</h1>;
     }
 
     render() {
@@ -67,7 +58,7 @@ class Home extends Component {
                         </NavItem>
                     </Nav>
                 </Navbar>
-                <div>{this.getDetails()}</div>
+                <div className="card-container">{this.getDetails()}</div>
             </div>
         );
     }
