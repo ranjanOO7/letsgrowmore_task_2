@@ -5,10 +5,7 @@ import Home from "./components/HomeComponent";
 function App() {
     return (
         <div className="App">
-            <header className="App-header">
-                <p>Hello World</p>
-                <Home />
-            </header>
+            <Home />
         </div>
     );
 }
