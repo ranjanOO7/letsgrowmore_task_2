@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import CardDetail from "./CardDetailComponent";
 import { Nav, NavItem, NavbarBrand, Navbar } from "reactstrap";
 import { baseURL } from "../shared/baseURL";
+// import Loader from "./loader/loader.js";
 
 class Home extends Component {
     constructor() {
@@ -40,7 +41,8 @@ class Home extends Component {
         if (this.state.isClicked) {
             if (this.state.isLoaded)
                 return <CardDetail dataSet={this.state.data} />;
-        } else return <h1>False</h1>;
+            // else return <Loader />;
+        } else return <div></div>;
     }
 
     render() {
