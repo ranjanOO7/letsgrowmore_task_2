@@ -8,6 +8,7 @@ const CardComponent = ({ data }) => {
             <CardBody>
                 <CardTitle>
                     <span>{data.first_name}</span>
+                    &nbsp;
                     <span>{data.last_name}</span>
                 </CardTitle>
                 <CardText>{data.email}</CardText>

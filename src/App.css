@@ -63,7 +63,7 @@ html {
 
 .card {
     padding: 5% 0 0 0;
-    margin: 0 5% 10% 5%;
+    margin: 0 5% 15% 3.25%;
     height: 200px;
     width: 200px;
     border: 2px solid cyan;
@@ -81,12 +81,12 @@ html {
     border: 2px solid #ff00ff;
     box-shadow: 0 4px 20px 0 rgba(255, 0, 255, 0.5);
     transform: scale(1.1);
-    transition: 0.5s ease-in-out;
+    transition: 0.3s ease-in;
 }
 
 .card:hover .card-img {
     border: 2px solid #f0f;
-    transition: 0.5s ease-in-out;
+    transition: 0.3s ease-in-out;
 }
 
 .card-img {
